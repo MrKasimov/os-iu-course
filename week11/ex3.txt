@@ -1,0 +1,10 @@
+In both codes line buffer is used which is flushed when it receives '\n'.
+Also, forked processes share buffer.
+So in second code buffer is flushed before fork but in first it's flushed after fork.
+
+First code output:
+Hello
+Hello
+Second code output:
+Hello
+
