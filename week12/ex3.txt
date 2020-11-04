@@ -1,0 +1,5 @@
+What I understood after running tests:
+
+1) Bigger buffer size decreases time for copying
+2) Setting O_SYNC flag increases time for copying a looot (due to write blocks)
+3) Bigger file sizes take longer to copy
